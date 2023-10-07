@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Processed Files</title>
+</head>
+<body>
+    <h1>Processing Complete!</h1>
+    
+    <p>Your files have been processed. Click the link below to download the ZIP archive containing all the processed files.</p>
+    
+    <a href="{{ url_for('download_file', filename=zip_filename) }}">Download ZIP</a>
+
+    <!-- Optional: Add a link to go back to the upload page -->
+    <p><a href="{{ url_for('upload_file') }}">Upload another file</a></p>
+</body>
+</html>
